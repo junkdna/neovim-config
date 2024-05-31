@@ -115,13 +115,13 @@ require("lazy").setup({
 		end,
 	},
 	-- Autopairs: [], (), "", '', etc
-	{
-		"windwp/nvim-autopairs",
-		event = "InsertEnter",
-		config = function()
-			require("config.nvim-autopairs")
-		end,
-	},
+	-- {
+	-- 	"windwp/nvim-autopairs",
+	-- 	event = "InsertEnter",
+	-- 	config = function()
+	-- 		require("config.nvim-autopairs")
+	-- 	end,
+	-- },
 	-- Treesitter-integration
 	{
 		"nvim-treesitter/nvim-treesitter",
@@ -279,15 +279,15 @@ require("lazy").setup({
 			require("config.trouble")
 		end,
 	},
-	{
-		"willothy/nvim-cokeline",
-		dependencies = {
-			"nvim-lua/plenary.nvim",        -- Required for v0.4.0+
-			"nvim-tree/nvim-web-devicons", -- If you want devicons
-			"stevearc/resession.nvim"       -- Optional, for persistent history
-		},
-		opts = function()
-			require("config.cokeline")
-		end
-	},
+	-- {
+	-- 	"willothy/nvim-cokeline",
+	-- 	dependencies = {
+	-- 		"nvim-lua/plenary.nvim",        -- Required for v0.4.0+
+	-- 		"nvim-tree/nvim-web-devicons", -- If you want devicons
+	-- 		"stevearc/resession.nvim"       -- Optional, for persistent history
+	-- 	},
+	-- 	opts = function()
+	-- 		require("config.cokeline")
+	-- 	end
+	-- },
 })
