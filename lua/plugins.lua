@@ -280,6 +280,10 @@ require("lazy").setup({
 			require("config.trouble")
 		end,
 	},
+    {
+        "folke/which-key.nvim",
+        config = true,
+    },
 	-- {
 	-- 	"willothy/nvim-cokeline",
 	-- 	dependencies = {
