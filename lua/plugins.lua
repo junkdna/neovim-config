@@ -34,6 +34,7 @@ vim.opt.rtp:prepend(lazypath)
 --     opts: The table will be passed to the require(...).setup(opts)
 require("lazy").setup({
 	-- LSP manager
+    "gregkh/kernel-coding-style",
 	"williamboman/mason.nvim",
 	"williamboman/mason-lspconfig.nvim",
 	"neovim/nvim-lspconfig",
