@@ -11,6 +11,13 @@ vim.opt.scrolloff = 10 -- no less than 10 lines even if you keep scrolling down
 -- vim.opt.expandtab = true -- tabs are spaces, mainly because of python
 
 -- UI config
+vim.opt.showtabline = 2
+vim.opt.ruler = true
+vim.opt.confirm = true
+vim.opt.title = true
+vim.opt.hidden = true
+vim.opt.wildmenu = true
+vim.opt.wildmode = "full"
 vim.opt.number = true -- show absolute number
 vim.opt.relativenumber = false -- add numbers to each line on the left side
 vim.opt.cursorline = true -- highlight cursor line underneath the cursor horizontally
