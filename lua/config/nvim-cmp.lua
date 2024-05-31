@@ -24,14 +24,14 @@ cmp.setup({
 		["<C-b>"] = cmp.mapping.scroll_docs(-4),
 		["<C-f>"] = cmp.mapping.scroll_docs(4),
 		-- Use <C-k/j> to switch in items
-		["<C-k>"] = cmp.mapping.select_prev_item(),
-		["<C-j>"] = cmp.mapping.select_next_item(),
+		["<C-p>"] = cmp.mapping.select_prev_item(),
+		["<C-n>"] = cmp.mapping.select_next_item(),
 		-- Use <CR>(Enter) to confirm selection
 		-- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
-		["<C-y>"] = cmp.mapping.confirm({ select = true }),
+		["<C-y>"] = cmp.mapping.confirm({ select = false }),
 
 		-- A super tab
-		-- sourc: https://github.com/hrsh7th/nvim-cmp/wiki/Example-mappings#luasnip
+		-- source: https://github.com/hrsh7th/nvim-cmp/wiki/Example-mappings#luasnip
 		["<CR>"] = cmp.mapping(function(fallback)
 			-- Hint: if the completion menu is visible select next one
 			if cmp.visible() then
@@ -84,7 +84,7 @@ cmp.setup({
 	-- Set source precedence
 	sources = cmp.config.sources({
 		{ name = "nvim_lsp" }, -- For nvim-lsp
-		{ name = "luasnip" }, -- For luasnip user
+		-- { name = "luasnip" }, -- For luasnip user
 		{ name = "buffer" }, -- For buffer word completion
 		{ name = "path" }, -- For path completion
 	}),
