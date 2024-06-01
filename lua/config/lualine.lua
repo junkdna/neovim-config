@@ -43,7 +43,7 @@ lualine.setup({
 				-- 2: Absolute path
 				-- 3: Absolute path, with tilde as the home directory
 				-- 4: Filename and parent dir, with tilde as the home directory
-				path = 3,
+				path = 1,
 				shorting_target = 40, -- Shortens path to leave 40 spaces in the window
 			},
 		},
@@ -53,14 +53,38 @@ lualine.setup({
 		lualine_z = { "location" },
 	},
 	inactive_sections = {
-		lualine_a = {},
+		lualine_c = {},
 		lualine_b = {},
-		lualine_c = { "filename" },
-		lualine_x = { "location" },
+		lualine_a = {
+            {
+                "filename",
+                path = 1,
+                shorting_target = 40,
+            }
+        },
+		lualine_z = { "location" },
 		lualine_y = {},
-		lualine_z = {},
+		lualine_x = {},
 	},
-	tabline = {},
+	tabline = {
+        lualine_a = {
+            {
+                "tabs",
+                path=1,
+                mode=2,
+                use_mode_colors = true,
+                show_modified_status = true,
+                symbols = {
+                    modified = '',  -- Text to show when the file is modified.
+                },
+            }
+        },
+		lualine_b = {},
+		lualine_c = {},
+		lualine_z = {},
+		lualine_y = {},
+		lualine_x = {},
+    },
 	winbar = {},
 	inactive_winbar = {},
 	extensions = {},
