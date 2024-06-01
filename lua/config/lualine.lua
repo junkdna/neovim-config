@@ -14,7 +14,7 @@ lualine.setup({
 			winbar = {},
 		},
 		ignore_focus = {},
-		always_divide_middle = true,
+		always_divide_middle = false,
 		globalstatus = false,
 		refresh = {
 			statusline = 1000,
@@ -43,7 +43,7 @@ lualine.setup({
 				-- 2: Absolute path
 				-- 3: Absolute path, with tilde as the home directory
 				-- 4: Filename and parent dir, with tilde as the home directory
-				path = 1,
+				path = 0,
 				shorting_target = 40, -- Shortens path to leave 40 spaces in the window
 			},
 		},
@@ -58,7 +58,7 @@ lualine.setup({
 		lualine_a = {
             {
                 "filename",
-                path = 1,
+                path = 0,
                 shorting_target = 40,
             }
         },
@@ -67,6 +67,8 @@ lualine.setup({
 		lualine_x = {},
 	},
 	tabline = {
+        lualine_c = {},
+        lualine_b = {},
         lualine_a = {
             {
                 "tabs",
@@ -74,16 +76,16 @@ lualine.setup({
                 mode=2,
                 use_mode_colors = true,
                 show_modified_status = true,
+                tabs_max_legth = 24,
+                max_length = vim.o.columns,
                 symbols = {
                     modified = '',  -- Text to show when the file is modified.
                 },
             }
         },
-		lualine_b = {},
-		lualine_c = {},
-		lualine_z = {},
-		lualine_y = {},
-		lualine_x = {},
+        lualine_x = {},
+        lualine_y = {},
+        lualine_z = {},
     },
 	winbar = {},
 	inactive_winbar = {},
