@@ -24,7 +24,7 @@ local opts = {
 
 -- For nvim-tree.lua
 -- default leader key: \
--- vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 -----------------
 -- Visual mode --
