@@ -29,7 +29,6 @@ return {
         keys = {
             { "<leader>gg", "<cmd>Neogit<cr>", desc = "Show Neogit UI" }
         }
-    }
     }, {
         "nvim-lualine/lualine.nvim",
         commit = "47f91c416daef12db467145e16bed5bbfe00add8",
@@ -40,5 +39,9 @@ return {
         config = function()
             require("config.lualine")
         end,
+    }, {
+        "folke/which-key.nvim",
+        tag = "v3.17.0",
+        config = true,
     },
 }
