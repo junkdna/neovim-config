@@ -10,19 +10,16 @@ return {
                 "hrsh7th/vim-vsnip",
             },
             {
-                "neovim/nvim-lspconfig",
+                "hrsh7th/cmp-nvim-lsp",
             },
             {
-                "hrsh7th/cmp-nvim-lsp", -- lsp auto-completion
+                "hrsh7th/cmp-buffer",
             },
             {
-                "hrsh7th/cmp-buffer", -- buffer auto-completion
+                "hrsh7th/cmp-path",
             },
             {
-                "hrsh7th/cmp-path", -- path auto-completion
-            },
-            {
-                "hrsh7th/cmp-cmdline", -- cmdline auto-completion
+                "hrsh7th/cmp-cmdline",
             }
 		},
 		config = function()
