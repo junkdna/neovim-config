@@ -1,6 +1,7 @@
 return {
     {
         "NeogitOrg/neogit",
+        enabled = false,
         tag = "v3.0.0",
         lazy = true,
         dependencies = {
