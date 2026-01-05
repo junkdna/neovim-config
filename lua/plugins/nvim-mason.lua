@@ -21,7 +21,7 @@ return {
                     "eslint",
                     "jinja_ls",
                     "lua_ls",
-                    "markdown-oxide",
+                    "markdown_oxide",
                     "nginx_language_server",
                     "pylsp",
                     "rust_analyzer",
