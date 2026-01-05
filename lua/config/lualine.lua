@@ -6,7 +6,9 @@ end
 lualine.setup({
 	options = {
 		icons_enabled = true,
-		theme = "solarized",
+		--theme = "solarized",
+		theme = "solarized-osaka",
+        --theme = 'NeoSolarized',
 		component_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" },
 		disabled_filetypes = {
